@@ -1,0 +1,91 @@
+* {
+  outline: none !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+body {
+  min-height: 100vh;
+}
+
+.cover {
+  min-height: 100vh;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  -webkit-animation: gradient 15s ease infinite;
+  animation: gradient 15s ease infinite;
+}
+
+@-webkit-keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.divCenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.coverImg {
+  background-image: url(../img/constructive-criticism-featured-01.webp);
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.myTransparent {
+  opacity: 0.9;
+}
+
+textarea {
+  resize: none;
+}
+
+.col-auto label,
+.col-auto input {
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.col-auto input:checked {
+  background-color: black;
+  border: black;
+}
+
+.myCheckboxActive {
+  background-color: #212529 !important;
+  border-color: #212529 !important;
+  color: #e4f5e7 !important;
+}
+
+.myCheckboxDeactive {
+  background-color: white !important;
+  color: #212529 !important;
+  border-color: #212529 !important;
+}
+/*# sourceMappingURL=style.css.map */

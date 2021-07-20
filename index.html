@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="icon"
+      href="img/logo/admec-fevicon-logo.png"
+      type="image/png"
+      sizes="any"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admec Feedback System</title>
+    <!-- Links -->
+    <link
+      rel="stylesheet"
+      href="bootstrap-5.0.0-beta1-dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body class="cover">
+    <!-- Header -->
+    <header class="container-fluid p-3 text-center">
+      <img
+        src="img/logo/admec-logo-and-text-in-white-2.png"
+        class="img-fluid"
+        alt="ADMEC Multimedia india"
+      />
+    </header>
+
+    <!-- Main Form -->
+    <main class="container py-4 px-md-5">
+      <div
+        class="card myTransparent border-0 mx-auto shadow p-2 px-md-3"
+        style="max-width: 35rem"
+      >
+        <div class="card-body">
+          <h4 class="card-title mb-4 text-primary text-center">
+            Feedback Form
+          </h4>
+
+          <!-- Student Details Form -->
+          <!-- action="process/studentProcess.php" -->
+          <form
+            name="studentForm"
+            action="process/studentProcess.php"
+            method="POST"
+            onsubmit="return validateForm()"
+          >
+            <!-- Full Name -->
+            <div class="mb-3 form-floating">
+              <input
+                type="text"
+                class="form-control"
+                id="fullName"
+                name="fullName"
+                placeholder="Full Name"
+                required
+              />
+              <label for="fullName">Full Name</label>
+            </div>
+
+            <!-- Student Card Id -->
+            <div class="mb-3 form-floating">
+              <input
+                type="text"
+                class="form-control"
+                id="studentId"
+                name="studentId"
+                placeholder="AA/AA/AA/01-01/01"
+                required
+              />
+              <label for="studentId">Students Id</label>
+              <!-- <small class="form-text">
+                You can check this on your i-card or contact us please.
+              </small> -->
+              <small class="form-text"> Example: AA/AA/AA/00-00/00 </small>
+            </div>
+
+            <!-- Email Address -->
+            <div class="mb-3 form-floating">
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                name="email"
+                placeholder="Email"
+                required
+              />
+              <label for="email">Email</label>
+            </div>
+
+            <!-- Phone Number -->
+            <div class="mb-3 form-floating">
+              <input
+                type="text"
+                class="form-control"
+                id="number"
+                name="phoneNumber"
+                placeholder="Mobile Number"
+                required
+              />
+              <label for="number">Mobile Number</label>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="text-end">
+              <button
+                type="button"
+                id="clearBtn"
+                onclick="clearForm()"
+                class="btn btn-outline-secondary"
+              >
+                Reset
+              </button>
+              <button type="submit" class="btn btn-primary">Continue</button>
+            </div>
+          </form>
+        </div>
+        <div class="card-footer bg-transparent text-center">
+          <a
+            href="AdminPanel/register.php"
+            class="text-decoration-none fw-light"
+            target="_blank"
+          >
+            Go To Admin Panel
+          </a>
+        </div>
+      </div>
+    </main>
+
+    <!-- Scripts -->
+    <script src="bootstrap-5.0.0-beta1-dist/js/bootstrap.bundle.min.js"></script>
+    <script async src="web.js"></script>
+  </body>
+</html>

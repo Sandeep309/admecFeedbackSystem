@@ -1,0 +1,43 @@
+* {
+  outline: none !important;
+  box-shadow: none !important;
+}
+body {
+  min-height: 100vh;
+}
+@import "animate/animateBackground.scss";
+.coverImg {
+  background-image: url(../img/constructive-criticism-featured-01.webp);
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.myTransparent {
+  opacity: 0.9;
+}
+textarea {
+  resize: none;
+}
+.col-auto label,
+.col-auto input {
+  // font-size: 1rem;
+  cursor: pointer;
+  user-select: none;
+}
+// Active Radio Buttons
+.col-auto input:checked {
+  background-color: black;
+  border: black;
+}
+// Active Classes For Checks
+.myCheckboxActive {
+  background-color: #212529 !important;
+  border-color: #212529 !important;
+  color: #e4f5e7 !important;
+}
+.myCheckboxDeactive {
+  background-color: white !important;
+  color: #212529 !important;
+  border-color: #212529 !important;
+}
